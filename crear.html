@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Pastel</title>
+</head>
+<body>
+    <!--Titulo y Banner-->
+    <div>
+        <a href="./index.html">
+            <h1>Bonnne Pastell</h1>
+        </a>
+    </div>
+    <div>
+        <h2>Crea tu propio pastel</h2>
+        <img src="./assets/img/banner.png" alt="banner">
+    </div>
+
+    <!--Menu y inputs-->
+    <div>
+        <h2>Elige el tipo de pastel</h2>
+        <div>
+            <form action="pedido.js">
+                <select id="pastel">
+                    <optgroup label="Pasteles">
+                        <option value="none">Selecciona una opcion por favor</option>
+                        <option value="Pastel-0">Pastel con foto/imagen</option>
+                        <option value="Pastel-1">Pastel de chocolate blanco</option>
+                        <option value="Pastel-2">Pastel 3 leches</option>
+                        <option value="Pastel-3">Pastel con choclate negro</option>
+                        <option value="Pastel-4">Pastel de fresa</option>
+                        <option value="Pastel-5">Pastel de frutas</option>
+                        <option value="Pastel-6">Pastel de helado</option>
+                        <option value="Pastel-7">Pastel de galletas Oreo</option>
+                    </optgroup>
+                </select><br>
+
+                <h2>¿Para cuando lo quieres?</h2>
+                <input type="datetime-local" id="fecha" name="fecha">
+                <br>
+
+                <h2>Elige el tamaño de tu pastel</h2>
+                <select id="tamanio">
+                    <option value="none" id="">Selecciona una opción</option>
+                    <optgroup label="Tamaño" id="">
+                        <option value="10p">10 personas</option>
+                        <option value="20p">20 personas </option>
+                        <option value="50p">50 personas </option>
+                        <option value="100p">100 personas </option>
+                    </optgroup>
+                </select><br>
+                
+                <h2>Elige adiccional</h2>
+                <input type="checkbox" name="Freas" id="Fresas" value="Fresas">
+                <label for="Fresas">Fresas 20$ </label><br>
+                <input type="checkbox" name="nueces" id="neuces" value="nueces">
+                <label for="nueces">Nueces 40$</label><br>
+                <input type="checkbox" name="exchoco" id="exchoco" value="exchoco">
+                <label for="exchoco">Baño de chocolate 50$</label><br>
+                <input type="checkbox" name="rychoco" id="rychoco" value="rychoco">
+                <label for="rychoco">Chocolate rayado 30$</label><br>
+                <input type="checkbox" name="rychocob" id="rychocob" value="rychocob">
+                <label for="rychocob">Chocolate rayado blanco $30</label><br>
+                
+                <br>
+
+                <h2>Nombre</h2>
+                <label for="name"></label>
+                <input type="text" name="name" id="name" value="" placeholder="Escribe tu nombre aqui"><br>
+
+                <h2>Telefono</h2>
+
+                <label for="numero1"></label>
+                <input type="tel" id="numero1" name="numero1" placeholder="Escribe tu numero aqui" maxlength="10"><br><br>
+
+                <h2>Correo</h2>
+                <label for="correo1"></label>
+                <input type="email" id="correo1" name="correo1" placeholder="Escribe tu correo aqui"><br><br>
+
+                <input type="reset">
+                <input type="submit" value="Submit">
+            </form>              
+        </div>
+    </div>
+</body>
+</html>
